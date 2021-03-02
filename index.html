@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina web </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="modal.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--Hidden es una clase para el payloder de carga que vamos a utilizar-->
+
+    <body class="hidden">
+        <!--Ceamos una clase que va a centrar todo lo que este en esa divicion contando el payloader-->
+        <div class="centrado" id="onload">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- A qui ira un header que los header se utilizan para los encavezados y la navegacion de la pagina-->
+        <header>
+            <nav id="nav" class="nav1">
+                <div class="contenedor-nav">
+                    <!-- Aqui ira nuestro logo-->
+                    <div class="logo">
+                        <img src="img/soytubroder.png" alt=""> #SoyTuBrother
+                    </div>
+
+
+                    <div class="enlaces" id="enlaces">
+                        <a href="#" id="enlace-inicio" class="btn-header">Incio</a>
+                        <a href="#" id="enlace-sobreme" class="btn-header">Sobre mí</a>
+                        <a href="#" id="enlace-servicio" class="btn-header">Coordinaciones</a>
+                        <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
+                        <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                    </div>
+                    <!--Agegamos un icono que se va a utilizar para hacerlo desplegable en las pantallas moviles o tabletas para la navegacion
+                de nuestra pagina, agregamos un identificador y una clase open para hacer el boton desplegable allas opciones del nav-->
+                    <div class="icono" id="open">
+                        <!--este el el boton menu-->
+                        <span>&#9776;</span>
+                    </div>
+                </div>
+                <!--aqui cierra nuestro apartado de navegacion)-->
+            </nav>
+
+            <div class="textos">
+                <h1>Soy TuBrother</h1>
+                <h2>Somos la mejor opcion, somos Acapulco</h2>
+            </div>
+            <!--Aqui cierra nuestro encavezado de nuestra pagina -->
+        </header>
+
+        <!--Aqui va nuestro apartado de hacerca de nosotros osea de mi. mi presentacion estara en forma de tarjeta mi imagen-->
+        <main>
+            <section class="team contenedor" id="yo">
+                <!-- Contenedor(container) (sección Acerca de) -->
+                <div class="w3-content w3-container w3-padding-64" id="about">
+                    <h3 style="color: var--1;" class="w3-center">SOBRE MI</h3>
+                    <br>
+                    <p class="w3-center"><em></em></p>
+                    <!--Creamos el boton para hacerle la funcion de leer mas-->
+                    <div class="w3-row">
+                        <div class="w3-col m6 w3-center w3-padding-large">
+                            <p><b><i class="fa fa-user w3-margin-right"></i>Ramiro Solorio Almazán</b></p><br>
+                            <img src="img/perfilelbrother.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+                        </div>
+                        <br><br>
+                        <!-- Ocultar este texto en dispositivos pequeños -->
+                        <div class="w3-col m6 w3-hide-small w3-padding-large">
+                            <br>
+                            <p style=" text-align:justify" class="tamañoh3"><b>Todos saben que Ramiro Solorio es un acapulqueño que ha luchado siempre defendiendo Acapulco, así lo hizo hace varios años cuando luchó para que no se privatizara la Roqueta o recientemente cuando evitó que se privatizaran
+                                las calles con los parquímetros ilegales. El maestro Ramiro Solorio ha encabezado siempre las luchas a favor de Acapulco, y también ha realizado cientos de acciones para promover la lectura, fomentar el deporte y rescatar
+                                áreas verdes. Aquí les comparto una SEMBLANZA de su trayectoria, que lo convierte, en el acapulqueño más preparado para poder rescatar Acapulco: Maestría en Administración y Licenciatura en Derecho por la UNAM.
+                            </b> </p>
+                        </div>
+                        <!-- modal-->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Mas sobre mí
+                  </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade tamañoh3" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Acerca de mí</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style=" text-align:justify" class="tamañoh3">Estudió la primaria en la Manuel Ávila Camacho, secundaria en la Federal #2, prepa en el CCH Sur y su carrera en la Facultad de Derecho de la UNAM, donde fue dirigente estudiantil, Consejero Universitario y Presidente
+                                            de su Generación 1988-1992. Fue Secretario del Gobernador de Guerrero (1993-1996), Director General de la Defensoría de Oficio en Guerrero (1996-1998), Presidente Fundador del ICADEP en Guerrero (1997), Director
+                                            General del Fondo Guerrero y Director General del Instituto para el Desarrollo de las Empresas del Sector Social en Guerrero (1998-2000).</p>
+
+
+                                        <p style=" text-align:justify"> Secretario de Estudio y Cuenta de la Sala Superior del Tribunal Electoral del Poder Judicial de la Federación (2000-2002), Jefe de Asesores del Ayuntamiento de Acapulco de Juárez (2002-2005), Diputado Local en Guerrero
+                                            y Presidente de la Comisión de Justicia del Congreso Local (2005-2008), Regidor en el Ayuntamiento de Acapulco de Juárez y Presidente de la Comisión de Educación y Cultura del Ayuntamiento (2009-2012). Secretario
+                                            Técnico en la Cámara Federal de Diputados (2012-2016). Jefe de Asesores en el Congreso de Oaxaca (2017). Candidato a presidente municipal de Acapulco (2018). Secretario Técnico en el Congreso de Puebla (2018-2019)
+                                            El maestro Ramiro Solorio es especialista en Derecho Parlamentario y actualmente asesora a diversos legisladores, por último debe anotarse, que el maestro Ramiro Solorio, fue profesor de la materia de Derecho
+                                            Parlamentario en la Universidad Americana de Acapulco durante 19 años. Es sin duda, el más preparado para gobernar, el que conoce más el municipio y el único que tiene la voluntad, la sensibilidad y el proyecto
+                                            para poder rescatar a nuestro municipio. Por todo lo anterior, ya basta de improvisaciones: Yo voy con el brother. #ElBrother2021
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                                        <button type="button" class="btn btn-primary">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- fin del modal sobre hacerca del brothermodal-->
+                    </div>
+                </div>
+                <br>
+            </section>
+
+
+
+            <!--Creamos otra seccion que va hacer la de los servicios
+    ahi tendremos 3 servicios o apartados-->
+            <section class="about " id="servicio">
+                <div class="contenedor">
+                    <h3>Nuestras cordinaciones</h3>
+                    <p style="color: #fff;" class="after">Siempre mejorando para ti</p>
+                    <div class="servicios">
+                        <div class="botones-work">
+                            <ul>
+                                <li class="filter">Coordinación General</li>
+                                <li class="filter">Agenda</li>
+                                <li class="filter">Financiera</li>
+                                <li class="filter">Zona urbana</li>
+                                <li class="filter">Zona rural</li>
+                                <li class="filter">Logistica</li>
+                                <li class="filter">Redes sociales</li>
+                                <li class="filter">Mujeres</li>
+                                <li class="filter">Estructura electoral</li>
+                                <li class="filter">Estrategia</li>
+                                <li class="filter">Grupos vulnerables</li>
+                                <li class="filter">Jovenes</li>
+                                <li class="filter">Deportiva</li>
+                                <!--modal-->
+                                <button id="btnModal">Ver mas...</button>
+                                <div id="tvesModal" class="modalContainer">
+                                    <div class="modal-content">
+                                        <span class="close">×</span>
+                                        <p class="justificado" class="w3-center" class="texto-team" style="color: black;">
+                                            <ul>
+                                                <li class="filter active">Coordinación General</li>
+                                                <li class="filter">Gestion social</li>
+                                                <li class="filter">Comunicacion social</li>
+                                                <li class="filter">Vinculacion</li>
+                                                <li class="filter">Bienestar animal</li>
+                                                <li class="filter">Cultural y educativa</li>
+                                                <li class="filter">Plan de gobierno</li>
+                                                <li class="filter">Tecnologia y sistemas</li>
+                                                <li class="filter">Planeacion y desarrollo urbano</li>
+                                                <li class="filter">Salud</li>
+                                                <li class="filter">Juridica</li>
+                                                <li class="filter">Ambiental</li>
+                                                <li class="filter">Apoyo social</li>
+                                                <li class="filter">Calcas y turismo</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                                <!--Fin del modal-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- sesion para las 10 cosas por las que deves botar por el brother-->
+            <section class="team contenedor">
+                <div class="w3-content w3-container w3-padding-64" id="about">
+                    <h3 style="color:rgb(219, 144, .5);" class="w3-center">10 RAZONES POR LAS QUE EL MAESTRO RAMIRO SOLORIO DEBE SER EL PRÓXIMO ALCALDE DE ACAPULCO.
+                    </h3>
+                    <br>
+                    <div class="w3-row">
+                        <div class="w3-col m6 w3-center w3-padding-large">
+                            <p><b><i class="fa fa-user w3-margin-right"></i>Ramiro Solorio Almazán</b></p><br>
+                            <img src="img/perfilbroder2.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+                            <br>
+                        </div>
+                        <br>
+                        <p class="w3-center w3-col m6"><em></em></p>
+                        <br><br>
+                        <ul style=" text-align:justify" class="tamañoh3">
+                            <br>
+                            <li>Porque nació en Acapulco y es un auténtico acapulqueño.</li><br>
+                            <li>Porque es de Barrio y es un hombre de esfuerzo.</li><br>
+                            <li>Porque tiene maestría en Administración, Licenciatura en Derecho y es el más preparado.</li><br>
+                            <li>Porque siempre ha defendido a la gente y ha realizado acciones a favor de los más vulnerables.</li><br>
+                            <li>Porque gracias a su lucha no se privatizó la Roqueta y no se privatizaron las calles de la ciudad.</li><br>
+                        </ul>
+                    </div>
+                    <br><br>
+
+                    <!-- inicio modal Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Ver mas..
+  </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Estas son las 10 cosas por las que debe votal por el Brother</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul style=" text-align:justify" class="tamañoh3">
+                                        <li>Porque es el único que ha apoyado a familiares de niños con cáncer.</li><br>
+                                        <li>Porque siempre ha defendido el Bienestar Animal.</li><br>
+                                        <li>Porque siempre ha promovido la lectura, compartiendo libros.</li><br>
+                                        <li> Porque tiene las manos limpias y no está vinculado a la delincuencia. </li><br>
+                                        <li>Porque el maestro Ramiro Solorio es el único que ha presentado propuestas claras y compromisos firmes para recuperar la grandeza de nuestro municipio. El maestro Ramiro Solorio tiene todo el amor, la capacidad y
+                                            la experiencia para rescatar Acapulco.
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin del modal Button trigger modal -->
+
+                    <!-- Fin de la sesion para las 10 cosas por las que deves botar por el brother-->
+
+
+                    <!-- Apartado para descargar el livro del brother-->
+                    <div class="w3-content w3-container w3-padding-64" id="about">
+                        <h3 style="color:rgb(219, 144, .5);" class="w3-center">Descarga mi libro gratis aqui
+                        </h3>
+                        <br>
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center w3-padding-large">
+                                <p><b><i class="fa fa-user w3-margin-right"></i>Ramiro Solorio Almazán</b></p><br>
+                                <img src="img/librobrother.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+                                <br>
+                            </div>
+                            <br><br><br>
+                            <p class="w3-center w3-col m6"><em></em></p>
+                            <p style=" text-align:justify" class="tamañoh3"><b> Hace exactamente 7 años, escribí el libro “Para entender la Paridad de Género”, el cual está disponible para su lectura en internet. <br><br> A lo largo de mi vida social y académica, seguiré siempre apoyando e impulsando la lucha de las mujeres.<br><br> Este es mi libro el cual lo puedes obtenerlo gratis y descargarlo en formato pdf aqui.
+                            </b></p>
+                            <br><br>
+                            <a class="btnlibro" href="http://biblioteca.diputados.gob.mx/janium/bv/cedip/lxii/parent_pargen.pdf?fbclid=IwAR2w-X54s5xTf9ShYx-l4KL82vDHVshSezkt52y-hjhTKrrjNFhyJ-m_yWE">Descargar gratis</a>
+                        </div>
+                        <br><br>
+                        <!-- Fin del Apartado para descargar el livro del brother-->
+
+
+
+
+                        <!--Aqui haremos otra seccion donde iran los filtros de
+    nuestro trabajo-->
+                        <div class="work contenedor" id="trabajo">
+                            <h3>Nuestro trabajo</h3>
+                            <p class="after">Hacemos de algo simple algo extraordinario</p>
+                            <!--Creamos unos botones y una lista desordenada 
+        con <li></li> en nuestros filtros-->
+                            <div class="botones-work">
+                                <ul>
+                                    <li class="filter active" data-nombre='todos'>Todo</li>
+                                    <li class="filter" data-nombre='animal'>Bienestar Animal</li>
+                                    <li class="filter" data-nombre='humanidad'>Humanidad</li>
+                                    <li class="filter" data-nombre='ambiental'>Ambiental</li>
+
+                                </ul>
+                            </div>
+
+                            <!--Aqui va a ir una div donde se encontrara la la galeria-->
+
+                            <!--Galeria Ambiental-->
+                            <div class="galeria-work">
+                                <class class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </class>
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental2.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental3.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental4.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental5.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental6.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental9.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental8.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work ambiental">
+                                    <div class="img-work">
+                                        <img src="img/ambiental7.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Ambiental
+                                    </div>
+                                </div>
+
+
+
+                                <!---Galeria humanidad-->
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad2.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad3.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad4.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad5.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad6.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad12.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad11.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <div class="cont-work humanidad">
+                                    <div class="img-work">
+                                        <img src="img/humanidad10.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Humanidad
+                                    </div>
+                                </div>
+
+                                <!--  Secion animal-->
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal2.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal3.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal4.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal5.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+
+                                <div class="cont-work animal">
+                                    <div class="img-work">
+                                        <img src="img/animal6.jpg" alt="">
+                                    </div>
+                                    <div class="textos-work">
+                                        Bienestar Animal
+                                    </div>
+                                </div>
+
+
+                            </div>
+            </section>
+        </main>
+
+
+        <!-- codijo para implementar la mensajeria de facebook Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml: true,
+                    version: 'v10.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution="setup_tool" page_id="103006924875651">
+        </div>
+        <!--------------------------Productos de venta de software-------------------------------------------------- -->
+
+        <!--------------------------creamos una seccion donde se alogara una credenciales de venta de software---------------------------------->
+
+
+        <!------------------------------------------------------------------------------------------------------------------------------->
+
+        <footer id="contacto">
+            <div class="footer contenedor">
+                <div class="marca-logo">
+                    <!--ponemos un logo en nuestro fotter y con  style="width: 100px; le damos un tamaño de 100px -->
+                    <img src="img/soytubroder.png" style="width: 300px;" alt="">
+                    <p style="color: #fff">#SoyTuBrother</p>
+                    <br><br>
+                    <!--<h1 style="color:rgb(250, 136, 6);">Contactanos</h1>-->
+                    <!---Hacemos un apartado en nuestro pie de pagina para que nos contacten-->
+                </div>
+                <!--Hacemos un salto de linea para que no este pegado el boton enviar alos iconos de contacto-->
+                <br>
+
+                <div class="iconos">
+                    <i class="fab fa-facebook-square"><a href="https://www.facebook.com/ramirosolorioacapulco/" class="a"></a></i>
+                    <i class="fab fa-twitter-square"><a href="https://twitter.com/ramirosolorio?fbclid=IwAR1cYV7werJWkGSAqp0EY_qY-DLX1Fe1czbwQ3e5Oe6-e5zO8T5HKdwK2ec" class="a"></a></i>
+                    <i class="fab fa-instagram"><a href="https://www.instagram.com/ramiro_solorio/?fbclid=IwAR3MFLeZB53HL_fKrKYBONrElgUrNnBbJ4Gp_QJ8oc8mLQgvbBXNvO4mtz0" class="a"></a></i>
+                </div>
+                <br>
+                <span style="color: #fff;">Copyright © 2021 Ramiro Solorio Almazán - Todos los derechos reservados.</span>
+            </div>
+
+
+
+
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/filtro.js"></script>
+        <script src="modal.js"></script>
+
+    </body>
+
+</html>
