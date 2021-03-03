@@ -339,10 +339,28 @@ esten centrados*/
                                             list-style: none;
                                             color: var(--color1);
                                         }
+                                        
+                                        .botones-work a {
+                                            display: inline-block;
+                                            text-align: center;
+                                            margin-left: var(--espacios);
+                                            margin-bottom: var(--espacios-contenido);
+                                            padding: 6px 12px;
+                                            border: 1px solid var(--color1);
+                                            list-style: none;
+                                            color: var(--color1);
+                                            text-decoration: none;
+                                        }
                                         /*Recuerda que los hover sirven para que al pasar el cursor por ensima de un boton
 texto o imagen cambie de color*/
                                         
                                         .botones-work li:hover {
+                                            background: var(--color1);
+                                            color: #fff;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .botones-work a:hover {
                                             background: var(--color1);
                                             color: #fff;
                                             cursor: pointer;
@@ -527,7 +545,7 @@ en vez de tener 60px tendra 30px*/
                                                 width: 90%;
                                                 margin-bottom: var(--margenes);
                                             }
-                                            .cont-work {
+                                            .contenedor .cont-work {
                                                 width: 85%;
                                                 font-size: 10px;
                                             }
@@ -543,16 +561,33 @@ en vez de tener 60px tendra 30px*/
                                             .filter {
                                                 font-size: 11px;
                                             }
+                                            .botones-work {
+                                                font-size: 11px;
+                                            }
+                                            .textos h1 {
+                                                font-size: 50px;
+                                            }
+                                            .contenedor h3 {
+                                                font-weight: normal;
+                                                font-size: 30px;
+                                                text-transform: lowercase;
+                                            }
                                         }
                                         
                                         @media screen and (max-width: 411px) {
                                             .tamañoh3 {
                                                 font-size: 10px;
                                             }
-                                            h3 {
+                                            .contenedor h3 {
                                                 font-weight: normal;
-                                                font-size: 10px;
+                                                font-size: 25px;
                                                 text-transform: lowercase;
+                                            }
+                                            .botones-work {
+                                                font-size: 10px;
+                                            }
+                                            .textos h1 {
+                                                font-size: 40px;
                                             }
                                         }
                                         /*--------------------------------------- Creamos el estilo para el formulario de contacto -----------------------------------------------*/
