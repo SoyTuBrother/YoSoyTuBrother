@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 COMPROMISOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="modal.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--Hidden es una clase para el payloder de carga que vamos a utilizar-->
+
+    <body>
+
+
+        <!-- A qui ira un header que los header se utilizan para los encavezados y la navegacion de la pagina-->
+        <header>
+            <nav id="nav" class="nav1">
+                <div class="contenedor-nav">
+                    <!-- Aqui ira nuestro logo-->
+                    <div class="logo">
+                        <img src="img/soytubroder.png" alt="">
+                    </div>
+
+
+                    <div class="enlaces" id="enlaces">
+                        <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                        <a href="index.html" id="enlace-sobreme" class="btn-header">Pagina principal</a>
+                        <a href="50compro.html">Los 50 compromisos</a>
+                        <a href="corrupcion.html">Combate a la corrupción</a>
+                        <!-- <a href="#" id="enlace-botarxmi" class="btn-header">Razones para botar por mí</a> -->
+
+                    </div>
+                    <!--Agegamos un icono que se va a utilizar para hacerlo desplegable en las pantallas moviles o tabletas para la navegacion
+            de nuestra pagina, agregamos un identificador y una clase open para hacer el boton desplegable allas opciones del nav-->
+                    <div class="icono" id="open">
+                        <!--este el el boton menu-->
+                        <span>&#9776;</span>
+                    </div>
+                </div>
+                <!--aqui cierra nuestro apartado de navegacion)-->
+            </nav>
+
+            <div class="textos">
+                <h1>Los 50 Compromisos Del Brother</h1>
+                <h2>#SomosAcapulco</h2>
+            </div>
+            <!--Aqui cierra nuestro encavezado de nuestra pagina -->
+
+            <!--Aqui va nuestro apartado de hacerca de nosotros osea de mi. mi presentacion estara en forma de tarjeta mi imagen-->
+            <main>
+
+                <!-- sesion para las 10 cosas por las que deves botar por el brother-->
+                <section class="team contenedor" id="botarxmi">
+                    <div class="w3-content w3-container w3-padding-64" id="about">
+                        <h3 class="w3-center">Los 50 Compromisos Del Maestro Ramiro Solorio.
+                        </h3>
+                        <br>
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center w3-padding-large">
+                                <p><b><i class="fa fa-user w3-margin-right"></i>Mtro. Ramiro Solorio Almazán</b></p><br>
+                                <img src="img/fotoperfil50cmpro.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+                                <br>
+                            </div>
+                            <br>
+                            <p class="w3-center w3-col m6"><em></em></p>
+                            <br><br>
+                            <ul style=" text-align:justify" class="tamañoh3">
+                                <br>
+                                <li>Llegar con las manos limpias, sin ataduras, no recibir dinero absolutamente de nadie.</li><br>
+                                <li>Integrar un gabinete plural, paritario e incluyente.</li><br>
+                                <li>Presentar denuncias para obligar a que devuelvan lo robado al municipio.</li><br>
+                                <li>Instalar Cámaras de Video Vigilancia Ciudadana en todos los puntos estratégicos del municipio.</li><br>
+                                <li>Garantizar el servicio de agua potable sin distinción en todos los barrios y colonias.</li><br>
+                            </ul>
+                        </div>
+                        <br><br>
+
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/19Y_PtDt6OdLK-a_3D_h7wl5lWrvCwS1c/view?usp=sharing">Ver todos aquí</a>
+
+
+
+
+                    </div>
+                </section>
+            </main>
+
+
+            <!-- codijo para implementar la mensajeria de facebook Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        xfbml: true,
+                        version: 'v10.0'
+                    });
+                };
+
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <!-- Your Chat Plugin code -->
+            <div class="fb-customerchat" attribution="setup_tool" page_id="103006924875651">
+            </div>
+            <!--------------------------Productos de venta de software-------------------------------------------------- -->
+
+            <!--------------------------creamos una seccion donde se alogara una credenciales de venta de software---------------------------------->
+
+
+            <!------------------------------------------------------------------------------------------------------------------------------->
+
+            <footer id="contacto">
+                <div class="footer contenedor">
+                    <div class="marca-logo">
+                        <!--ponemos un logo en nuestro fotter y con  style="width: 100px; le damos un tamaño de 100px -->
+                        <img src="img/soytubroder.png" style="width: 300px;" alt="">
+                        <p style="color: #fff">#SoyTuBrother</p>
+                        <br><br>
+                        <!--<h1 style="color:rgb(250, 136, 6);">Contactanos</h1>-->
+                        <!---Hacemos un apartado en nuestro pie de pagina para que nos contacten-->
+                    </div>
+                    <!--Hacemos un salto de linea para que no este pegado el boton enviar alos iconos de contacto-->
+                    <br>
+
+                    <div class="iconos">
+                        <i class="fab fa-facebook-square"><a href="https://www.facebook.com/ramirosolorioacapulco/" class="a"></a></i>
+                        <i class="fab fa-twitter-square"><a href="https://twitter.com/ramirosolorio?fbclid=IwAR1cYV7werJWkGSAqp0EY_qY-DLX1Fe1czbwQ3e5Oe6-e5zO8T5HKdwK2ec" class="a"></a></i>
+                        <i class="fab fa-instagram"><a href="https://www.instagram.com/ramiro_solorio/?fbclid=IwAR3MFLeZB53HL_fKrKYBONrElgUrNnBbJ4Gp_QJ8oc8mLQgvbBXNvO4mtz0" class="a"></a></i>
+                    </div>
+                    <br>
+                    <span style="color: #fff;">Copyright © 2021 Ramiro Solorio Almazán - Todos los derechos reservados.</span>
+                </div>
+
+
+
+
+            </footer>
+            <script src="js/jquery.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/filtro.js"></script>
+            <script src="modal.js"></script>
+
+    </body>
+
+</html>
+
+
+</body>
+
+</html>

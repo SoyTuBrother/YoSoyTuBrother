@@ -423,6 +423,35 @@ texto o imagen cambie de color*/
                                             line-height: 30px;
                                             font-weight: 300;
                                         }
+                                        /* apartado de las card de corupcion del combate*/
+                                        
+                                        .card2 {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            flex-wrap: wrap;
+                                        }
+                                        /*al igual a su contenido*/
+                                        
+                                        .content-card2 {
+                                            width: 31%;
+                                            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+                                            overflow: hidden;
+                                            height: 400px;
+                                        }
+                                        
+                                        .people {
+                                            height: 80%;
+                                        }
+                                        /*le ponemos un tamaño a las imagenes  de nuestra clase
+content-card*/
+                                        
+                                        .content-card2 img {
+                                            /*Le damos un ancho de 100%*/
+                                            width: 100%;
+                                            /*Le damos un largo de 100%*/
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
                                         /*footer*/
                                         /*El footer como backgroud tendra una imagen de un teclado*/
                                         
@@ -524,6 +553,12 @@ a un dispositivo tamaño de 700px tendra ese tamaño*/
 llegue a un tamaño de 700px la pag*/
                                                 margin-bottom: var(--margenes);
                                             }
+                                            .content-card2 {
+                                                width: 48%;
+                                                /*y tendra este espacio que sera de 30 px cuando 
+llegue a un tamaño de 700px la pag*/
+                                                margin-bottom: var(--margenes);
+                                            }
                                              :root {
                                                 /*cuando la pagina llegue a 700 px los margenes que creamos en nuestra variable
 en vez de tener 60px tendra 30px*/
@@ -539,6 +574,9 @@ en vez de tener 60px tendra 30px*/
                                                 --espacios-contenido: 25px;
                                             }
                                             .content-card {
+                                                width: 90%;
+                                            }
+                                            .content-card2 {
                                                 width: 90%;
                                             }
                                             .caja-servicios {
