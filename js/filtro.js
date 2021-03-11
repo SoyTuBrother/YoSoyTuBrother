@@ -27,13 +27,16 @@ $(function() {
     let sobreme = $('#yo').offset().top,
         servicio = $('#servicio').offset().top,
         trabajo = $('#trabajo').offset().top,
-        contacto = $('#contacto').offset().top;
+        contacto = $('#contacto').offset().top,
+        botarxmiar = $('#botarxmi').offset().top;
+
 
     //ponemos las mismas variables pero en este caso le decimos que sigan funcionando cuando sea rponsive la pagina
     //osea que si esta en modo movil o tableta de ese tamaño funcionen por igual
     window.addEventListener('resize', function() {
         let sobreme = $('#yo').offset().top,
             servicio = $('#servicio').offset().top,
+            botar = $('#botarxmi').offset().top,
             trabajo = $('#trabajo').offset().top,
             contacto = $('#contacto').offset().top;
     });
@@ -81,6 +84,24 @@ $(function() {
             scrollTop: servicio - 100
         }, 600);
     });
+
+
+
+    //-----------------------------------------boton Razones para Botar por mi------------------------------------------------------//
+
+
+    //aqui le decimos que cuando le de click en el boton equipo, que su clase es (enlace-equipo) 
+    //nos mande hasta el apartado de equipo
+    $('#enlace-botarxmi').on('click', function(e) {
+        //el e.preventDefault(); nos quita el # que pusimos en los enlaces del nav
+        e.preventDefault();
+        $('html, body').animate({
+            // con el scrollTop le decimos que nos direccione al apartado de servicios
+            //le pusimos un -100 por que tapava el h3 que le pusimos como titulo "nuestros servicios" 
+            scrollTop: servicio - 100
+        }, 600);
+    });
+
 
     //-----------------------------------------boton trabajo------------------------------------------------------/ /
 
